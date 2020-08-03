@@ -24,6 +24,12 @@ export class DashboardComponent implements OnInit {
 
   constructor() { }
 
+  showMe:boolean=false;
+
+  toggleTag() {
+    this.showMe = !this.showMe; 
+  }
+
   ngOnInit() {
 
     this.datasets = [
